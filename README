@@ -1,0 +1,33 @@
+Short:    TrueTypeFont Viewer
+Author:   Diego Casorran
+Uploader: <dcr8520@amiga.org>
+Version:  0.1
+Type:     util/cdity
+Requires: 68020+ & ttengine.library
+
+
+This tool let you know, in a workbench window, what typedef are available
+at the desired font. It must be run from cli, getting as argument, the full
+path to the TTFont.
+
+I wrote this little tool to be able to load a ttfont from dopus4 quickly,
+and then check his style and the following characters:
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+0123456789[\]!"#$%&'()*+×¿
+./:;<=>?@^_-{|}~¡¬«¢¥¦§¨ªß
+©®¯°±²³´µ¶·¸¹º»¼½¾¿ÂÃÄÅÆÇÈ
+ÉÊËÌÍÎÏĞÑÒÓÔÕÖ×ØÙÚÛÜİŞßà£¤
+
+
+To config DOpus4, you only need create/edit a new class and then enter:
+
+Name: TrueTypeFont	ID: TTF		Match: $00010000
+
+and, on Double-Click: AmigaDos TTFViewer {f}
+(as you, for sure, know ;)
+
+
+thats all,
+I hope this tool can be useful for someone..
